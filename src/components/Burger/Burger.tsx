@@ -1,6 +1,9 @@
 import {IngredientType} from '../../types';
 import React from 'react';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
+import BreadTop from './BreadTop/BreadTop';
+import BreadBottom from './BreadBottom';
+import BurgerPriceCounter from './BurgerPriceCounter/BurgerPriceCounter';
 
 interface BurgerProps {
   burgerState: IngredientType[],
@@ -11,10 +14,7 @@ const Burger: React.FC<BurgerProps> = ({burgerState, burgerPrice}) => {
   return (
     <>
       <div className="Burger">
-        <div className="BreadTop">
-          <div className="Seeds1"></div>
-          <div className="Seeds2"></div>
-        </div>
+        <BreadTop/>
         {
           burgerState.map((ingredient, index) => {
             return (
@@ -22,9 +22,9 @@ const Burger: React.FC<BurgerProps> = ({burgerState, burgerPrice}) => {
             );
           })
         }
-        <div className="BreadBottom"></div>
+        <BreadBottom/>
       </div>
-      <div className="burgerPrice">{burgerPrice}</div>
+      <BurgerPriceCounter burgerPrice={burgerPrice}/>
     </>
   );
 };
