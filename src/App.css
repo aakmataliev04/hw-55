@@ -11,11 +11,60 @@
 }
 .ingredients-block {
   width: 50%;
-  border: 1px solid red;
+  border: 1px solid brown;
 }
+.ingredient {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid brown;
+  margin: 10px 5px;
+  background: lightgoldenrodyellow;
+  padding: 5px;
+}
+.add-ingredient-btn {
+  background: inherit;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.ingredient-name {
+  font-weight: 600;
+}
+.add-ingredient-btn:hover .ingredient-name  {
+  color: rebeccapurple;
+  font-weight: 700;
+}
+.ingredient-img {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: 0 5vw 0 0;
+  border: 1px solid lightgoldenrodyellow;
+}
+.add-ingredient-btn:hover .ingredient-img  {
+  border: 1px solid rebeccapurple;
+}
+
+.increase-ingredient-btn {
+  width: 30px;
+  height: 30px;
+  background: url("src/assets/delete-icon.png") center center no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  border: 1.5px solid darkred;
+}
+.ingredient-btn:hover {
+  border: 2.5px solid brown;
+}
+
+
+
+
+
 .burger-block {
   width: 50%;
-  border: 1px solid red;
+  border: 1px solid brown;
 }
 .BreadBottom {
   height: 13%;
@@ -131,7 +180,7 @@
 }
 
 .Burger {
-  width: 60%;
+  width: 70%;
   margin: auto;
   height: 250px;
   overflow: auto;

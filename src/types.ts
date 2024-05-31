@@ -1,4 +1,4 @@
-export interface Ingredient {
+export interface IngredientType {
   name: string,
   price: number,
   image: string
