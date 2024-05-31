@@ -7,7 +7,7 @@ interface BurgerPriceCounterProps {
 const BurgerPriceCounter: React.FC<BurgerPriceCounterProps> = ({burgerPrice}) => {
   return (
     <>
-      <div className="burgerPrice">{burgerPrice}</div>
+      <div className="burgerPrice">{burgerPrice} сом</div>
     </>
   );
 };
